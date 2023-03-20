@@ -5,7 +5,7 @@
         var project = []
 
         function projectToaddProject(name) {
-            console.log("ff");
+
             project.push(new Project(name));
 
         }
@@ -31,11 +31,13 @@
             })
             return arr;
         }
+
         function getAllTaskFromProject(projectIndex) {
             project[projectIndex].task.map((item)=>{
                 console.log(item.name);
             })
         }
+
         function getAllSubtaskFromTaskFromProject(projectIndex,TaskID) {
             project[projectIndex].task[TaskID].map((item)=>{
                 console.log(item.name);
@@ -44,16 +46,23 @@
 
           const form = document.getElementById("addProject")
           const projects = document.getElementById("projects");
-        form.addEventListener("submit",(e)=>{
-
+        
+          form.addEventListener("submit",(e)=>{
             e.preventDefault();
             projects.innerHTML = "";
             projectToaddProject(e.target.name.value);
             getAllProject().map((item) =>{
-                projects.innerHTML += `<li><a class="nav-link text-white">${item.name}</a></li>`
-              }); 
+                projects.innerHTML += `<li><a class="nav-link id="${item.name}id" text-white">${item.name}</a></li>`
+                document.getElementById(`${item.name}id`).addEventListener('click',(e)=>{
+                    e.preventDefault(); 
+                })
+            }); 
             
         })
+
+        const task = document.getElementById("task");
+        const taskok = document.getElementById("taskok");
+
 
         
 

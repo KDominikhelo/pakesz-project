@@ -8,6 +8,7 @@ this.name = name;
 this.date = new Date();
 console.log(this.date.getFullYear()  + "y :"+this.date.getMonth()+"m :"+this.date.getDay()+"d: "+ this.date.getHours()+"h: "+  "készült");
 }
+
 addTask(task){
     this.task.push(task);
 }
