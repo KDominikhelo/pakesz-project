@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+
+  <title>P-project</title>
+
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+
+  <!-- CSS Files -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body class="g-sidenav-show body_back">
+
+  <aside
+    class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 navbar_aside"
+    id="sidenav-main">
+
+    <div class="sidenav-header">
+      <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+        aria-hidden="true" id="iconSidenav"></i>
+
+      <a class="navbar-brand m-0" href="" target="_blank">
+        <img src="./assets/img/logo-ct.png" class="navbar-brand-img h-100" alt="main_logo">
+        <span class="ms-1 font-weight-bold text-white">P-project</span>
+      </a>
+
+    </div>
+
+
+    <hr class="horizontal light mt-0 mb-2">
+
+
+    <ul class="navbar-nav">
+
+      <li class="nav-item mt-3">
+        <h6 class="ps-4 ms-2  text-xs text-white  opacity-8">Project settings</h6>
+      </li>
+
+      <li class="nav-item">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+            <i class="material-icons opacity-10"><img src="./assets/img/project-management.png" alt="project-management" width="32px"></i>
+          </div> 
+          <span class="nav-link-text ms-1">Projects</span>
+        </a>
+        <ul class="dropdown-menu navbar_aside">
+          <li><a class="nav-link text-white">Project 1</a></li>
+          <li><a class="nav-link text-white">Project 2</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="nav-link  text-white">New Project</a></li>
+        </ul>
+      </li>
+      </li>
+
+
+
+
+      <li class="nav-item">
+
+        <a class="nav-link text-white " href="">
+
+          <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+            <i class="material-icons opacity-10"><img src="./assets/img/calendar.png" alt="project-management" width="32px"></i>
+          </div>
+
+          <span class="nav-link-text ms-1">Calendar</span>
+        </a>
+
+      </li>
+
+
+      <li class="nav-item">
+
+        <a class="nav-link text-white " href="">
+
+          <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+            <i class="material-icons opacity-10"><img src="./assets/img/link.png" alt="project-management" width="32px"></i>
+          </div>
+
+          <span class="nav-link-text ms-1">Teams</span>
+        </a>
+
+      </li>
+
+
+
+
+      <li class="nav-item mt-3">
+        <h6 class="ps-4 ms-2  text-xs text-white  opacity-8">Account settings</h6>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-white " href="">
+          <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+            <i class="material-icons opacity-10"><img src="./assets/img/user.png" alt="project-management" width="32px"></i>
+          </div>
+          <span class="nav-link-text ms-1">Profile</span>
+        </a>
+      </li>
+
+
+      <li class="nav-item mt-3">
+        <h6 class="ps-4 ms-2  text-xs text-white  opacity-8">App settings</h6>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-white " href="">
+
+          <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+            <i class="material-icons opacity-10"><img src="./assets/img/logout.png" alt="project-management" width="32px"></i>
+          </div>
+
+          <span class="nav-link-text ms-1">Logout</span>
+        </a>
+      </li>
+
+    </ul>
+  </aside>
+
+  <main class="main-content border-radius-lg ">
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl navbar_aside" id="navbarBlur"
+      data-scroll="true">
+      <div class="container-fluid py-1 px-3">
+        <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+
+          <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+            </form>
+          </div>
+
+          <ul class="navbar-nav  justify-content-end">
+            <li class="nav-item d-flex align-items-center">
+              <a href="" class="nav-link text-body font-weight-bold px-0">
+                <i class="fa fa-user me-sm-1"></i>
+                <span class="d-sm-inline d-none">Profil</span>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- End Navbar -->
+    <div class="container-fluid py-4">
+      <div class="row">
+        <div class="col-lg-12 position-relative z-index-2">
+          <div class="card card-plain mb-4">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="d-flex flex-column h-100">
+                    <h2 class="font-weight-bolder mb-0">Projects</h2>
+                    <div id="js_timer">
+                      <div id="timer">
+                        0:0:0
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+
+            <div class="col-lg-4">
+              <div class="card z-index-2">
+                <div class="card-header pb-0">
+                  <h6>Tasks</h6>
+                </div>
+                <div class="card-body p-3">
+                  <div class="chart">
+                    <ul class="list-group column" style="min-height: 100px;">
+
+                      <div class="card mt-4  " draggable="true">
+                        <div class="card-header card_post_it">
+                          Napi feladatok
+                        </div>
+                        <div class="card-body" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          <h5 class="card-title">Napi feladatok</h5>
+                          <p class="card-text">Itt a leírása a napi feladatoknak.</p>
+                        </div>
+                      </div>
+
+                      <div class="card mt-4" draggable="true">
+                        <div class="card-header card_post_it_pink">
+                          Programozás
+                        </div>
+                        <div class="card-body" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          <h5 class="card-title">Programozás</h5>
+                          <p class="card-text">Itt a leírása a programozásnak</p>
+                        </div>
+                      </div>
+
+                      <div class="card mt-4" draggable="true">
+                        <div class="card-header card_post_it_green">
+                          Valami más
+                        </div>
+                        <div class="card-body" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          <h5 class="card-title">Valami más</h5>
+                          <p class="card-text">Itt a leírása valami másnak</p>
+                        </div>
+                      </div>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="card z-index-2">
+                <div class="card-header pb-0">
+                  <h6>Process</h6>
+                </div>
+                <div class="card-body p-3">
+                  <div class="chart">
+                    <ul class="list-group column" style="min-height: 100px;">
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="col-lg-4">
+              <div class="card z-index-2">
+                <div class="card-header pb-0">
+                  <h6>Completed</h6>
+                </div>
+                <div class="card-body p-3">
+                  <div class="chart">
+                    <ul class="list-group column" style="min-height: 100px;">
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <div id="globe" class="position-absolute end-0 top-10 mt-sm-3 mt-7 me-lg-7">
+                <canvas width="700" height="600" class="w-lg-100 h-lg-100 w-75 h-75 me-lg-0 me-n10 mt-lg-5"></canvas>
+              </div>
+            </div>
+          </div>
+
+
+          <footer class="footer py-4  ">
+            <div class="container-fluid">
+              <div class="row align-items-center justify-content-lg-between">
+                <div class="col-lg-6 mb-lg-0 mb-4">
+                  <div class="copyright text-center text-sm text-muted text-lg-start">
+                    ©
+                    <script>
+                      document.write(new Date().getFullYear())
+                    </script>,
+                    Szokásos <i class="fa fa-heart"></i> footer
+                    <a href="" class="font-weight-bold" target="_blank">szöveg</a>
+                    kerül ide.
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+                    <li class="nav-item">
+                      <a href="" class="nav-link text-muted" target="_blank">Footer 2</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="nav-link text-muted" target="_blank">Footer 3</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="nav-link text-muted" target="_blank">Footer 4</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="nav-link pe-0 text-muted" target="_blank">Footer 5</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+        </div>
+
+
+  </main>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl position-relative">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Feladat leírása</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ide le van írva mit kell csinálni.....
+
+          <hr>
+          <div class="container">
+            <ul class="list-group">
+              <li class="list-group-item ">An item <input class="form-check-input" type="checkbox" value=""
+                  id="flexCheckDefault"></li>
+              <li class="list-group-item">A second item <input class="form-check-input" type="checkbox" value=""
+                  id="flexCheckDefault"></li>
+              <li class="list-group-item ">A third item <input class="form-check-input" type="checkbox" value=""
+                  id="flexCheckDefault"></li>
+              <li class="list-group-item ">A fourth item <input class="form-check-input" type="checkbox" value=""
+                  id="flexCheckDefault"></li>
+              <li class="list-group-item ">And a fifth one <input class="form-check-input" type="checkbox" value=""
+                  id="flexCheckDefault"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
