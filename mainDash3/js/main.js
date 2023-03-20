@@ -41,15 +41,22 @@
                 console.log(item.name);
             })
         }
-        const form =document.getElementById("addProject")
-        
+
+          const form = document.getElementById("addProject")
+          const projects = document.getElementById("projects");
         form.addEventListener("submit",(e)=>{
 
             e.preventDefault();
-
+            projects.innerHTML = ""
             projectToaddProject(e.target.name.value);
-
+            getAllProject().map((item) =>{
+                projects.innerHTML += `<li><a class="nav-link text-white">${item.name}</a></li>`
+              }); 
+            
         })
+
+        
+
 /*
             document.getElementById("makeProject").onsubmit = (e)=>{
                 e.preventDefault();

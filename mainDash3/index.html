@@ -55,14 +55,9 @@
           <span class="nav-link-text ms-1">Projects</span>
         </a>
 
-        <ul class="dropdown-menu navbar_aside">
+        <ul id="projects" class="dropdown-menu navbar_aside">
           <li><a class="nav-link text-white">Project 1</a></li>
-          <script>
-
-            getAllProject().map((item) =>{
-              write(item.name);
-            }); 
-          </script>
+          
             <hr class="dropdown-divider">
           </li>
           <li><a class="nav-link  text-white" data-bs-toggle="modal" data-bs-target="#newProjectModal">New Project</a></li>
@@ -360,7 +355,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form id="addproject">
+          <form id="addProject">
             <div class="mb-3">
               <label for="name" class="form-label">Projekt neve</label>
               <input type="text" class="form-control" id="name" name="name" >
