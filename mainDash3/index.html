@@ -59,7 +59,7 @@
         <ul class="dropdown-menu navbar_aside">
 
           <ul id="projects" class="navbar_aside list-group">
-
+             
           </ul>
 
           <hr class="dropdown-divider">
@@ -177,7 +177,7 @@
               <div class="row">
                 <div class="col-lg-6">
                   <div class="d-flex flex-column h-100">
-                    <h2 class="font-weight-bolder mb-0">Projects</h2>
+                    <h2 id="projectName" class="font-weight-bolder mb-0">Projects</h2>
                     <div id="js_timer">
                       <div id="timer">
                         0:0:0
@@ -198,38 +198,9 @@
                 </div>
                 <div class="card-body p-3">
                   <div class="chart">
-                    <ul class="list-group column" style="min-height: 100px;">
+                    <ul class="list-group column" id="tasks" style="min-height: 100px;">
 
-                      <div class="card mt-4  " draggable="true">
-                        <div class="card-header card_post_it">
-                          Napi feladatok
-                        </div>
-                        <div class="card-body" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                          <h5 class="card-title">Napi feladatok</h5>
-                          <p class="card-text">Itt a leírása a napi feladatoknak.</p>
-                        </div>
-                      </div>
-
-                      <div class="card mt-4" draggable="true">
-                        <div class="card-header card_post_it_pink">
-                          Programozás
-                        </div>
-                        <div class="card-body" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                          <h5 class="card-title">Programozás</h5>
-                          <p class="card-text">Itt a leírása a programozásnak</p>
-                        </div>
-                      </div>
-
-                      <div class="card mt-4" draggable="true">
-                        <div class="card-header card_post_it_green">
-                          Valami más
-                        </div>
-                        <div class="card-body" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                          <h5 class="card-title">Valami más</h5>
-                          <p class="card-text">Itt a leírása valami másnak</p>
-                        </div>
-                      </div>
-
+                 
                     </ul>
                   </div>
                 </div>
@@ -243,17 +214,13 @@
                 </div>
                 <div class="card-body p-3">
                   <div class="chart">
-                    <ul class="list-group column" style="min-height: 100px;">
+                    <ul class="list-group column" id="works" style="min-height: 100px;">
 
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
-
-
-
-
 
             <div class="col-lg-4">
               <div class="card z-index-2">
@@ -262,7 +229,7 @@
                 </div>
                 <div class="card-body p-3">
                   <div class="chart">
-                    <ul class="list-group column" style="min-height: 100px;">
+                    <ul class="list-group column" id="comlation" style="min-height: 100px;">
 
                     </ul>
                   </div>
@@ -372,14 +339,38 @@
               <label for="name" class="form-label">Projekt neve</label>
               <input type="text" class="form-control" id="name" name="name">
             </div>
-
-            
-
         </div>
 
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
           <button type="submit" class="btn btn-primary">Project létrehozása</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="newTaskModal" tabindex="-1" aria-labelledby="newTaskModal" aria-hidden="true">
+    <div class="modal-dialog position-relative">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="newTaskModal">Task hozzáadása</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="task">
+
+            <div class="mb-3">
+              <label for="name" class="form-label">Task neve</label>
+              <input type="text" class="form-control" id="taskName" name="taskName">
+            </div>
+        </div>
+
+        <div class="modal-footer" id="addSubmitbottum">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Task hozzáadása</button>
           </form>
         </div>
 
