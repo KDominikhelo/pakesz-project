@@ -21,7 +21,6 @@
 </head>
 
 <body class="g-sidenav-show body_back">
-
   <aside
     class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 navbar_aside"
     id="sidenav-main">
@@ -55,13 +54,18 @@
           </div> 
           <span class="nav-link-text ms-1">Projects</span>
         </a>
+
         <ul class="dropdown-menu navbar_aside">
           <li><a class="nav-link text-white">Project 1</a></li>
-          <li><a class="nav-link text-white">Project 2</a></li>
-          <li>
+          <script>
+
+            getAllProject().map((item) =>{
+              write(item.name);
+            }); 
+          </script>
             <hr class="dropdown-divider">
           </li>
-          <li><a class="nav-link  text-white">New Project</a></li>
+          <li><a class="nav-link  text-white" data-bs-toggle="modal" data-bs-target="#newProjectModal">New Project</a></li>
         </ul>
       </li>
       </li>
@@ -347,10 +351,36 @@
     </div>
   </div>
 
+
+  <div class="modal fade" id="newProjectModal" tabindex="-1" aria-labelledby="newProjectModal" aria-hidden="true">
+    <div class="modal-dialog modal-xl position-relative">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="newProjectModal">Projekt létrehozása</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="addproject">
+            <div class="mb-3">
+              <label for="name" class="form-label">Projekt neve</label>
+              <input type="text" class="form-control" id="name" name="name" >
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="./assets/js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+
     <script src="./js/main.js" type="module" ></script>
     <script src="./js/modules/task.js"  ></script>
     <script src="./js/modules/project.js"  ></script>

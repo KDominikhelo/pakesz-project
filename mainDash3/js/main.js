@@ -5,7 +5,7 @@
         var project = []
 
         function projectToaddProject(name) {
-            
+            console.log("ff");
             project.push(new Project(name));
 
         }
@@ -25,10 +25,11 @@
             }
         }
         function getAllProject() {
-            
+            const arr = [];
             project.map((item)=>{
-                console.log(item.name);
+                arr.push(item);
             })
+            return arr;
         }
         function getAllTaskFromProject(projectIndex) {
             project[projectIndex].task.map((item)=>{
