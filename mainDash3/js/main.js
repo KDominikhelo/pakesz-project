@@ -47,7 +47,7 @@
         form.addEventListener("submit",(e)=>{
 
             e.preventDefault();
-            projects.innerHTML = 
+            projects.innerHTML = "";
             projectToaddProject(e.target.name.value);
             getAllProject().map((item) =>{
                 projects.innerHTML += `<li><a class="nav-link text-white">${item.name}</a></li>`
