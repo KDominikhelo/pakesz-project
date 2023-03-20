@@ -40,6 +40,15 @@
                 console.log(item.name);
             })
         }
+        const form =document.getElementById("addProject")
+        
+        form.addEventListener("submit",(e)=>{
+
+            e.preventDefault();
+
+            projectToaddProject(e.target.name.value);
+
+        })
 /*
             document.getElementById("makeProject").onsubmit = (e)=>{
                 e.preventDefault();
