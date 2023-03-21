@@ -26,11 +26,7 @@ export class Project{
     getTaskByIndex(index){
 
         //FETCH AMI LEKÉRI A BACKENDTŐL INDEX ALAPJÁN A TASKOT
-
-        for (let i = index; i < this.task.length; i++) {
-            const task = array[i];
-            return task;
-        }
+return this.task[index];
 
     }
     
