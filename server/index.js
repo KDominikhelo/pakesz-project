@@ -2,8 +2,9 @@ import SubTask from "./classes/SubTask";
 import Task from "./classes/Task";
 import Project from "./classes/Project";
 const express = require("express");
-const app = express();
 
+const app = express();
+app.use(express.json());
 const project = [];
 const task = [];
 const submit = [];
@@ -16,10 +17,10 @@ app.route("/project")
 
 })
 .post((req,res)=>{
-project.push(new Project(req.body.name))
+project.push(new Project(req.body.name));
 })
 .get((req,res)=>{
-
+res.send(project);
 })
 app.route("/task")
 .delete((req,res)=>{
