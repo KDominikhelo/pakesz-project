@@ -1,15 +1,15 @@
-import { Task } from "./Task";
-
 export class Project{
 
     projectName;
     userId;
+    projectId;
     task = [];
 
     
-    constructor (projectName,userId){
-        projectName = this.projectName;
-        userId = this.userId;
+    constructor (projectName,userId,projectId){
+        this.projectName = projectName;
+        this.userId = userId;
+        this.projectId = projectId;
     }
 
     addNewTask(task){
@@ -27,10 +27,7 @@ export class Project{
 
         //FETCH AMI LEKÉRI A BACKENDTŐL INDEX ALAPJÁN A TASKOT
 
-        for (let i = index; i < this.task.length; i++) {
-            const task = array[i];
-            return task;
-        }
+       return this.task[index];
 
     }
     
