@@ -1,27 +1,39 @@
+import { Task } from "./Task";
+
 export class Project{
 
-    
+    projectName;
+    userId;
     task = [];
+
     
-    constructor (name){
-    this.name = name;
-    this.date = new Date();
-    console.log(this.date.getFullYear()  + "y :"+this.date.getMonth()+"m :"+this.date.getDay()+"d: "+ this.date.getHours()+"h: "+  "készült");
-    
+    constructor (projectName,userId){
+        projectName = this.projectName;
+        userId = this.userId;
     }
-    
-    addTask(task){
+
+    addNewTask(task){
         this.task.push(task);
+        //IDE JÖN A FETCH HOGY ELKÜLDJE A BACKENDNEK
     }
-    getTask(){
-    
-        const array = []
-        this.task.map((item)=>{
-            array.push(item);
-        })
-    
-        return array;
-    
+
+    getAllTasks(){
+        //IDE JÖN A FETCH HOGY LEKÉRJE AZ BACKENDNEK
+      return this.task;  
+
     }
+
+    getTaskByIndex(index){
+
+        //FETCH AMI LEKÉRI A BACKENDTŐL INDEX ALAPJÁN A TASKOT
+
+        for (let i = index; i < this.task.length; i++) {
+            const task = array[i];
+            return task;
+        }
+
+    }
+    
+
     
     }

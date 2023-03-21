@@ -1,11 +1,9 @@
-import { Address } from "./Address";
-
 export class User{
 
     userName;
     email;
     userId;
-    Address = Address;
+    projects = [];
 
 
 constructor(userName,email,userId){
@@ -13,6 +11,13 @@ constructor(userName,email,userId){
 userName = this.userName;
 email = this.email;    
 userId = this.userId;
+
+
+}
+
+addNewProject(project){
+
+    this.projects.push(project);
 
 
 }
