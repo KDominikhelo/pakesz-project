@@ -13,8 +13,8 @@ export class Project{
     }
 
     addNewTask(task){
-        this.task.push(task);
         //IDE JÖN A FETCH HOGY ELKÜLDJE A BACKENDNEK
+        this.task.push(task);
     }
 
     getAllTasks(){
