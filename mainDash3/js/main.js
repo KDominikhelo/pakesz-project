@@ -92,9 +92,6 @@
                     })
                     showTask(index)
 
-                    
-                   
-        
                 })
             }); 
             
@@ -112,6 +109,8 @@
         document.addEventListener("dragend", (e) => {
           e.target.classList.remove("dragging");
           
+          
+
         });
         
         columns.forEach((item) => {
