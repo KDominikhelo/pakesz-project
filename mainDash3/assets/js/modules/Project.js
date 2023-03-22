@@ -23,11 +23,10 @@ export class Project{
 
     }
 
-    getTaskByIndex(index){
+    getTaskById(taskId){
 
-        //FETCH AMI LEKÉRI A BACKENDTŐL INDEX ALAPJÁN A TASKOT
+        //FETCH AMI LEKÉRI A BACKENDTŐL taskId ALAPJÁN A TASKOT
 
-       return this.task[index];
 
     }
     

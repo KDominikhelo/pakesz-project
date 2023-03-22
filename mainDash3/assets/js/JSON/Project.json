@@ -1,0 +1,30 @@
+[
+    
+    {
+
+        "projectName": "Programozás",
+        "userId": 1,
+        "projectId": 1
+    
+    },
+    
+    {
+        "projectName": "Pakesz-Project",
+        "userId": 1,
+        "projectId": 2
+    },
+
+    {
+
+        "projectName": "Dominik-Project",
+        "userId": 1,
+        "projectId": 3
+
+    }
+
+
+
+
+]
+
+
